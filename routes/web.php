@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminAuthController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CategoryImageController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\MenuImageController;
@@ -138,6 +139,6 @@ Route::middleware('admin.auth')->prefix('admin')->group(function () {
 Route::get('/admin/session', [AdminAuthController::class, 'sessionRetrieve']);
 
 Route::post('/menu-image', [MenuImageController::class, 'create']);
-Route::post('/category-image', [MenuImageController::class, 'create']);
+Route::post('/category-image', [CategoryImageController::class, 'create']);
 //
 // ==========================================
