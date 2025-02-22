@@ -1,0 +1,122 @@
+/* typography related CSS */
+/* font families */
+/* font sizes */
+/* line heights */
+/* font weights */
+
+.lrv-font-poppins {
+    font-family: var(--font-family-primary) !important;
+}
+
+.lrv-font-cormorant-garamond {
+    font-family: var(--font-family-secondary) !important;
+}
+
+.lrv-font-logofont {
+    font-family: "abbottoldstyle";
+}
+
+.lrv-font-cardfont {
+    font-family: "Nunito";
+    font-weight: 200;
+}
+
+.lrv-fs-1 {
+    font-size: var(--font-size-1) !important;
+}
+
+.lrv-fs-2 {
+    font-size: var(--font-size-2) !important;
+}
+
+.lrv-fs-3 {
+    font-size: var(--font-size-3) !important;
+}
+
+.lrv-fs-4 {
+    font-size: var(--font-size-4) !important;
+}
+
+.lrv-fs-5 {
+    font-size: var(--font-size-5) !important;
+}
+
+.lrv-fs-6 {
+    font-size: var(--font-size-6) !important;
+}
+
+.lrv-fs-7 {
+    font-size: var(--font-size-7) !important;
+}
+
+.lrv-fs-8 {
+    font-size: var(--font-size-8) !important;
+}
+
+.lrv-fst-italic {
+    font-style: italic !important;
+}
+
+.lrv-fst-normal {
+    font-style: normal !important;
+}
+
+.lrv-fw-lighter {
+    font-weight: lighter !important;
+}
+
+.lrv-fw-light {
+    font-weight: 300 !important;
+}
+
+.lrv-fw-normal {
+    font-weight: 400 !important;
+}
+
+.lrv-fw-medium {
+    font-weight: 500 !important;
+}
+
+.lrv-fw-semibold {
+    font-weight: 600 !important;
+}
+
+.lrv-fw-bold {
+    font-weight: 700 !important;
+}
+
+.lrv-fw-bolder {
+    font-weight: bolder !important;
+}
+
+.lrv-lh-1 {
+    line-height: 100% !important;
+}
+
+.lrv-lh-sm {
+    line-height: 125% !important;
+}
+
+.lrv-lh-normal {
+    line-height: 150% !important;
+}
+
+.lrv-lh-lg {
+    line-height: 200% !important;
+}
+
+.lrv-txt-dec-ul {
+    text-decoration: underline;
+}
+
+.lrv-txt-dec-none {
+    text-decoration: none;
+}
+
+.lrv-txt-dec-solid {
+    text-decoration: solid;
+}
+
+.lrv-txt-dec-cc {
+    text-decoration: currentColor;
+}

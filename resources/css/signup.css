@@ -1,0 +1,123 @@
+.rounded-top-right {
+  border-top-right-radius: 2rem;
+}
+
+.rounded-bottom-left {
+  border-bottom-left-radius: 2rem;
+}
+
+.su-s1-ipt {
+    font-size: 14px !important;
+}
+
+.su-s1-ipt::-webkit-placeholder {
+    text-align: left;
+    font-size: 14px !important;
+}
+
+.su-s1-txt1 {
+    font-size: 14px;
+}
+
+.su-s1-txt2 {
+    font-size: 14px !important;
+}
+
+.iti__country-container {
+    border-right: 1px solid #000000;
+    padding-right: 5px;
+}
+
+#su-s1-ipt-mn {
+    padding-left: 115px !important;
+}
+
+/* plugin css */
+/* This css use to ovwewrite css in plugin */
+
+select {
+    width: 220px;
+}
+
+.iti--allow-dropdown{
+    border: none !important;
+    padding: 0 !important;
+}
+
+.iti__country-container {
+    left: 17px !important;
+}
+
+.iti__country-container,
+ .iti__selected-country,
+ .iti-0__dropdown-content,
+ .iti__search-input,
+ .iti__country-list {
+    background-color: transparent !important;
+}
+
+.iti__selected-country {
+    padding: 0 !important;
+}
+
+.iti__arrow {
+    margin-left: 10px;
+    width: auto !important;
+    height: auto !important;
+    border: none !important;
+}
+
+/* media queries for all css*/
+@media only screen and (max-width: 215px) {
+
+    .su-s1-ipt {
+        font-size: 12px !important;
+    }
+
+    .iti--allow-dropdown{
+        border: #000000;
+        border-width: 1px;
+        border-style: solid;
+        padding: 0.25rem !important;
+        border-radius: 50rem;
+    }
+
+    .su-s1-txt2, .iti__tel-input {
+        font-size: 12px !important;
+    }
+
+    .su-s1-ipt::-webkit-placeholder {
+        text-align: left;
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (min-width: 216px) and (max-width: 480px) {
+    .su-s1-txt2, .iti__tel-input, .iti__selected-dial-code {
+        font-size: 12px !important;
+    }
+
+    .su-s1-ipt {
+        font-size: 12px !important;
+    }
+
+    .iti--allow-dropdown{
+        border: #000000;
+        border-width: 1px;
+        border-style: solid;
+        padding: 0.25rem !important;
+        border-radius: 50rem;
+    }
+
+    .su-s1-ipt::-webkit-placeholder {
+        text-align: left;
+        font-size: 12px !important;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .su-s1-txt2, .iti__tel-input, .iti__selected-dial-code {
+        font-size: 12px !important;
+    }
+}

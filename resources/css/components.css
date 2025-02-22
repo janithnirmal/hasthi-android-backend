@@ -1,0 +1,24 @@
+@import "./main.css";
+
+@import "./components/header.css";
+@import "./components/datatables.css";
+@import "./components/imagePicker.css";
+@import "./components/product-card.css";
+
+.new-arrival {
+    position: relative;
+    transform: rotate(-45deg) translateZ(0px);
+    right: 40px;
+    top: 25px;
+    width: 150px;
+    font-size: var(--font-size-8);
+}
+
+@media (min-width: 576px) {
+    .new-arrival {
+        right: 45px;
+        top: 35px;
+        width: auto;
+        font-size: var(--font-size-7);
+    }
+}

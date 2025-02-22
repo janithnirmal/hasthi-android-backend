@@ -1,0 +1,1 @@
+import{C as n}from"./Core-DAdlDyCj.js";setTimeout(()=>{t()},1500);document.addEventListener("DOMContentLoaded",async function(){t(),await fetch("/sanctum/csrf-cookie"),n.UIM.applyAppearAnimation()});const t=()=>{const e=document.getElementById("spinner");e&&e.remove(),n.debugLog("Spinner paused")};

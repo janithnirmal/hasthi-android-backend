@@ -1,0 +1,110 @@
+/* header css */
+:root {
+    --lrv-header-link-color: var(--main-light);
+    --lrv-header-link-color-hover: var(--primary-100);
+    --lrv-header-link-color-active: var(--primary-300);
+
+    --lrv-header-level1-block-color: var(--primary-900);
+    --lrv-header-level1-block-color-hover: var(--primary-600);
+
+    --lrv-header-level2-block-color: var(--primary-900);
+    --lrv-header-level2-block-color-hover: var(--primary-600);
+}
+
+.lrv-header-underlay {
+    height: 118px;
+    background-color: var(--primary-900);
+}
+
+.lrv-header-logo {
+    height: 40px;
+    object-fit: contain;
+}
+
+.lrv-navbar-nav {
+    color: var(--lrv-header-link-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+    gap: 1rem;
+}
+
+.lrv-navbar-nav a {
+    color: var(--lrv-header-link-color) !important;
+}
+
+.lrv-navbar-nav a:hover {
+    color: var(--lrv-header-link-color-hover) !important;
+}
+
+.lrv-navbar-nav .active {
+    color: var(--lrv-header-link-color-active) !important;
+}
+
+.lrv-header-level1-block {
+    color: var(--lrv-header-level1-block-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 3rem;
+    cursor: pointer;
+}
+
+.lrv-header-level1-block > a {
+    color: var(--lrv-header-level1-block-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.lrv-header-level1-block > a:hover {
+    color: var(--lrv-header-level1-block-color-hover);
+}
+
+.lrv-header-level2-block {
+    color: var(--lrv-header-level2-block-color);
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+}
+
+.lrv-header-level2-block > a {
+    color: var(--lrv-header-level2-block-color);
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+}
+
+.lrv-header-level2-block > a:hover {
+    color: var(--lrv-header-level1-block-color-hover);
+}
+
+.lrv-header-level3-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    gap: 1rem;
+    background-color: red;
+    width: 170px;
+    min-height: 200px;
+    max-height: calc(10vh + 200px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 400px;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 1200px) {
+    .lrv-header-underlay {
+        height: 99px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .lrv-header-underlay {
+        height: 67px;
+    }
+}

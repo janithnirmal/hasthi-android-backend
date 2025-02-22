@@ -1,0 +1,92 @@
+/* core utility css classes */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--primary-100);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-600);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-600);
+}
+
+a {
+    color: var(--primary-600);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-7);
+    color: var(--main-dark);
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+/* card related classes */
+.cardTitle {
+    font-family: "Manrope";
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.fit-cover {
+    object-fit: cover;
+}
+
+.fit-contain {
+    object-fit: contain;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.lrv-shadow-s {
+    box-shadow: var(--box-shadow-sm) !important;
+}
+
+.lrv-shadow-l {
+    box-shadow: var(--box-shadow-lg) !important;
+}
+
+.lrv-shadow-none {
+    box-shadow: none !important;
+}
+
+/* transisttion */
+button,
+button:hover {
+    transition: 700ms !important;
+    cursor: pointer;
+}
+
+a,
+a:hover {
+    transition: 700ms !important;
+}
+
+/* animation apear */
+[data-animation="apear"] {
+    opacity: 0.05;
+}

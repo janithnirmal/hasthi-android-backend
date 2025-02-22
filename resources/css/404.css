@@ -1,0 +1,36 @@
+/* Styles for small devices */
+@media only screen and (max-width: 480px) {
+    .pnf-s1-txt{
+        font-size: 12px !important;
+    }
+
+    .pnf-s1-container{
+        min-height: 60vh !important;
+    }
+}
+
+/* Styles for medium devices */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .pnf-s1-h1{
+        font-size: 130px !important;
+    }
+
+    .pnf-s1-txt{
+        font-size: 14px !important;
+    }
+
+    .pnf-s1-container{
+        min-height: 75vh !important;
+    }
+}
+
+/* Styles for large devices */
+@media only screen and (min-width: 1025px) {
+    .pnf-s1-h1{
+        font-size: 200px !important;
+    }
+
+    .pnf-s1-container{
+        min-height: 85vh !important;
+    }
+}

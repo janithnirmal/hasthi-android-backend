@@ -1,0 +1,196 @@
+/*  data tables css goes here */
+/* (https://datatables.net/) */
+
+.dt-container tbody tr td {
+    padding: 0.2rem !important;
+    text-align: center;
+}
+
+.dt-container-cell-text-start {
+    text-align: start !important;
+}
+
+.dt-container tbody tr:hover {
+    background-color: var(--primary-100) !important;
+}
+
+.dt-container tbody tr:hover {
+    background-color: var(--primary-300) !important;
+}
+
+.dt-container tbody tr:active {
+    background-color: var(--primary-200) !important;
+}
+
+.dt-container tbody tr:focus {
+    background-color: var(--primary-200) !important;
+}
+
+.dt-container tbody {
+    margin-bottom: 3rem !important;
+}
+
+.dt-container tbody td {
+    text-align: start !important;
+    border-bottom: 0.5px rgba(118, 118, 118, 0.266) solid;
+}
+
+.dt-length {
+    position: relative;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.dt-length > .dt-input {
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+}
+
+.dt-length > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0.25rem;
+    overflow: hidden;
+    text-align: start;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dt-length > label {
+        transition: none;
+    }
+}
+
+.dt-length > .dt-input {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+}
+
+.dt-length > .dt-input ~ label {
+    opacity: 0.65;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
+
+.dt-input {
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23111' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    display: block;
+    width: 100%;
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    color: var(--main-dark);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    background-image: var(--bs-form-select-bg-img),
+        var(--bs-form-select-bg-icon, none);
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border-radius: 0;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border: 0 !important;
+    border-bottom: 1px solid var(--main-dark) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dt-input {
+        transition: none;
+    }
+}
+
+.dt-input:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.dt-input[multiple],
+.dt-input[size]:not([size="1"]) {
+    padding-right: 0.75rem;
+    background-image: none;
+}
+
+.dt-input:disabled {
+    background-color: transparent;
+}
+
+.dt-input:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 var(--primary-100);
+}
+
+.dt-empty {
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.dt-info {
+    padding-top: 1rem;
+}
+
+.dt-container .top {
+    /* display: none; */
+}
+
+.dt-container .top .dt-search {
+    display: none;
+}
+
+.dt-paging {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 1rem;
+}
+
+.dt-paging nav {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 1rem;
+}
+
+.dt-paging .dt-paging-button:hover {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50% !important;
+    color: var(--primary-100);
+    background-color: var(--primary-900);
+    border: var(--border-width) solid transparent;
+}
+
+.dt-paging .dt-paging-button:focus {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50% !important;
+    color: var(--primary-100);
+    background-color: var(--primary-900);
+    border: var(--border-width) solid transparent;
+}
+
+.dt-paging .dt-paging-button {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50% !important;
+    color: var(--primary-900);
+    background-color: var(--primary-100);
+    border: var(--border-width) solid var(--primary-900);
+}
+
+.dt-paging .dt-paging-button.current {
+    background-color: var(--main-dark);
+    color: var(--primary-100);
+}

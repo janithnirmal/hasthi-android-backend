@@ -1,0 +1,66 @@
+/* application theme variables */
+
+@font-face {
+    font-family: "abbottoldstyle";
+    src: url("../fonts/abbottoldstyle.ttf");
+}
+
+:root {
+    --main-light: #eeeeee;
+    --main-dark: #1a1a1a;
+
+    --primary-100: #c3d4ff; /* Light blue */
+    --primary-200: #84a9fe; /* Lighter blue */
+    --primary-300: #557fff; /* Medium light blue */
+    --primary-400: #3361f2; /* Vibrant blue */
+    --primary-500: #1945ea; /* Primary blue */
+    --primary-600: #0d27d1; /* Slightly darker blue */
+    --primary-700: #0d23b1; /* Darker blue */
+    --primary-800: #0b1d94; /* Deep blue */
+    --primary-900: #040f55; /* Very dark blue */
+    --primary-1000: #010836; /* Darkest blue */
+
+    --secondary-100: #c3c3c3;
+    --secondary-200: #7d7d7d;
+    --secondary-300: #4c4c4c;
+    --secondary-400: #4c4c4c;
+    --secondary-500: #3a3a3a;
+    --secondary-600: #171717;
+    --secondary-700: #171717;
+    --secondary-800: #171717;
+    --secondary-900: #1a1a1a;
+
+    --accent-100: #ffe6e6; /* Lightest red */
+    --accent-200: #ffcccc; /* Light red */
+    --accent-300: #ffb3b3; /* Soft red */
+    --accent-400: #ff9999; /* Medium light red */
+    --accent-500: #ff8080; /* Primary red */
+    --accent-600: #ff6666; /* Medium dark red */
+    --accent-700: #ff4d4d; /* Dark red */
+    --accent-800: #ff3333; /* Deeper red */
+    --accent-900: #ff1a1a; /* Very dark red */
+    --accent-1000: #ff0000; /* Pure red */
+
+    --font-family-primary: "Petrona", sans-serif;
+    --font-family-secondary: "Cormorant Garamond", serif;
+
+    --font-size-1: calc(3.9rem + 1.5vw);
+    --font-size-2: calc(3.05rem + 1vw);
+    --font-size-3: calc(2.3rem + 0.8vw);
+    --font-size-4: calc(1.7rem + 0.6vw);
+    --font-size-5: calc(1.3rem + 0.4vw);
+    --font-size-6: calc(1rem + 0.3vw);
+    --font-size-7: calc(0.8rem + 0.2vw);
+    --font-size-8: calc(0.65rem + 0.1vw);
+
+    --border-width: 1px;
+    --border-style: solid;
+
+    --border-radius: 0.7813rem;
+    --border-radius-sm: 0.375rem;
+    --border-radius-lg: 1.25rem;
+    --border-radius-pill: 50rem;
+
+    --box-shadow-sm: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+    --box-shadow-lg: 0 1.1rem 2rem rgba(0, 0, 0, 0.175);
+}
