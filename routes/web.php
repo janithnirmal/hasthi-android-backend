@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\MenuImageController;
 use App\Http\Controllers\TicketController;
 use Illuminate\Support\Facades\Route;
 
@@ -136,5 +137,7 @@ Route::middleware('admin.auth')->prefix('admin')->group(function () {
 //session test
 Route::get('/admin/session', [AdminAuthController::class, 'sessionRetrieve']);
 
+Route::post('/menu-image', [MenuImageController::class, 'create']);
+Route::post('/category-image', [MenuImageController::class, 'create']);
 //
 // ==========================================

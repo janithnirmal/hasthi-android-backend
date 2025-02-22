@@ -48,6 +48,10 @@ return Application::configure(basePath: dirname(__DIR__))
         // $middleware->web([
         // \Illuminate\Session\Middleware\StartSession::class,
         // ]);
+
+        $middleware->validateCsrfTokens(except: [
+            '*',
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
