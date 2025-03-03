@@ -10,9 +10,10 @@ class OrderController
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $userUID = $request->userUID;
+        return response()->json(Order::where('userUID', $userUID)->get());
     }
 
     /**

@@ -149,6 +149,7 @@ Route::post('/analytics-log-data', [StatsController::class, 'store']);
 Route::get('/analytics-log-data', [StatsController::class, 'index']);
 
 Route::post('/menu-orders', [OrderController::class, 'store']);
+Route::get('/orders-history', [OrderController::class, 'index']);
 //
 // ==========================================
 
