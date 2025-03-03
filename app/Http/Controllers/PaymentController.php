@@ -116,7 +116,7 @@ class PaymentController
             'orderDate' => date('Y-m-d'),
         ];
 
-        Mail::to("rmjanithnirmal@gmail.com")->send(new MenuPayment($data));
+        Mail::to($data["mail"])->send(new MenuPayment($data));
 
 
         return response()->json(['message' => 'Payment successful']);
