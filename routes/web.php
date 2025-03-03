@@ -7,6 +7,7 @@ use App\Http\Controllers\CategoryImageController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\MenuImageController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\StatsController;
 use App\Http\Controllers\TicketController;
@@ -147,7 +148,7 @@ Route::post('/payment-proceed', [PaymentController::class, 'pay']);
 Route::post('/analytics-log-data', [StatsController::class, 'store']);
 Route::get('/analytics-log-data', [StatsController::class, 'index']);
 
-Route::post('/menu-orders', [StatsController::class, 'store']);
+Route::post('/menu-orders', [OrderController::class, 'store']);
 //
 // ==========================================
 
