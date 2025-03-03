@@ -12,7 +12,7 @@ class StatsController
      */
     public function index()
     {
-        //
+        return response()->json(Stats::all());
     }
 
     /**
