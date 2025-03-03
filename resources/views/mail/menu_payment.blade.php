@@ -24,7 +24,7 @@
     </div>
 
     <div class="content">
-        <p><strong>Customer Email:</strong> {{ $mail }}</p>
+        <p><strong>Customer Email:</strong> {{ $customerEmail }}</p>
         <p><strong>Order Date:</strong> {{ $orderDate }}</p>
         <p><strong>Transaction ID:</strong> {{ $transactionId }}</p>
         <p><strong>Payment Method:</strong> {{ $paymentMethod }}</p>
