@@ -43,7 +43,7 @@ class MenuPayment extends Mailable
         return new Content(
             view: 'emails.menu_payment',
             with: [
-                'customerEmail' => $this->data['email'],
+                'customerEmail' => $this->data['mail'],
                 'totalAmount' => $this->data['totalAmount'],
                 'paymentMethod' => $this->data['paymentMethod'],
                 'transactionId' => $this->data['transactionId'],
