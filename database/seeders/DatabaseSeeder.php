@@ -2,6 +2,7 @@
 
 use App\Models\Menu;
 use Database\Seeders\AdminSeeder;
+use Database\Seeders\StatsSeeder;
 use Database\Seeders\UserSeeder;
 use Illuminate\Database\Seeder;
 
@@ -12,6 +13,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UserSeeder::class,
             AdminSeeder::class,
+            StatsSeeder::class,
         ]);
     }
 }
