@@ -8,6 +8,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\MenuImageController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\StatsController;
 use App\Http\Controllers\TicketController;
 use Illuminate\Support\Facades\Route;
 
@@ -143,6 +144,7 @@ Route::post('/menu-image', [MenuImageController::class, 'create']);
 Route::post('/category-image', [CategoryImageController::class, 'create']);
 
 Route::post('/payment-proceed', [PaymentController::class, 'pay']);
+Route::post('/analytics-log-data', [StatsController::class, 'store']);
 //
 // ==========================================
 
