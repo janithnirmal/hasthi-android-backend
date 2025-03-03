@@ -109,7 +109,7 @@ class PaymentController
 
 
         $data = [
-            'mail' => $request->custom_1 ?? 121,
+            'mail' => $request->custom_1 ?? "rmjanithnirmal@gmail.com",
             'totalAmount' => $payhere_amount ?? 122,
             'paymentMethod' => 'Card Payment',
             'transactionId' => $order_id ?? 123,

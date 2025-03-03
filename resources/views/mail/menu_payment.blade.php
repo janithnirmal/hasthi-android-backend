@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Menu Order Payment Receipt</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; p
+            ing: 0; }
         .container { max-width: 600px; margin: 20px auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
         .header { text-align: center; padding-bottom: 20px; border-bottom: 1px solid #ddd; }
         .content { margin-top: 20px; }
