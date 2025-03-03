@@ -146,6 +146,8 @@ Route::post('/category-image', [CategoryImageController::class, 'create']);
 Route::post('/payment-proceed', [PaymentController::class, 'pay']);
 Route::post('/analytics-log-data', [StatsController::class, 'store']);
 Route::get('/analytics-log-data', [StatsController::class, 'index']);
+
+Route::post('/menu-orders', [StatsController::class, 'store']);
 //
 // ==========================================
 
