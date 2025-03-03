@@ -13,13 +13,13 @@ class StatsController
     public function index()
     {
 
-        // Data for the previous month only
+
         $lastMonthDataList = Stats::whereBetween('created_at', [
             now()->startOfMonth()->subMonth(),
             now()->endOfMonth()->subMonth()
         ])->get();
 
-        // Data for the current month only
+
         $thisMonthDataList = Stats::whereBetween('created_at', [
             now()->startOfMonth(),
             now()->endOfMonth()
