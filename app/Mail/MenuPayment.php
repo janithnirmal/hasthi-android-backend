@@ -41,7 +41,7 @@ class MenuPayment extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'emails.menu_payment',
+            view: 'mail.menu_payment',
             with: [
                 'customerEmail' => $this->data['mail'],
                 'totalAmount' => $this->data['totalAmount'],
