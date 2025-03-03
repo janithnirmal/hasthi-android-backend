@@ -93,12 +93,11 @@ class PaymentController
             $file = fopen("payment.json", "w");
             fwrite($file, json_encode($request->all()));
             fclose($file);
-
-            // store data in the db using the Payment model
-            Payment::create(["data" => json_encode($request->all())]);
-
-
-            return response()->json(['message' => 'Payment successful']);
         }
+        
+        // store data in the db using the Payment model
+        Payment::create(["data" => json_encode($request->all())]);
+
+        return response()->json(['message' => 'Payment successful']);
     }
 }
