@@ -102,17 +102,17 @@ class PaymentController
         Payment::create(
             [
                 "data" => json_encode(value: $request->all()),
-                "user_id" => $request->custom_2
+                "user_id" => $request->custom_2 ?? 123456
             ]
         );
 
         try {
 
             $data = [
-                'mail' => $request->custom_1,
-                'totalAmount' => $payhere_amount,
+                'mail' => $request->custom_1 ?? 121,
+                'totalAmount' => $payhere_amount ?? 122,
                 'paymentMethod' => 'Card Payment',
-                'transactionId' => $order_id,
+                'transactionId' => $order_id ?? 123,
                 'orderDate' => date('Y-m-d'),
             ];
 
