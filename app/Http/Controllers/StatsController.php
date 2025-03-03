@@ -28,7 +28,8 @@ class StatsController
      */
     public function store(Request $request)
     {
-        Stats::create(["logged_time", $request->logged_time]);
+        $currentDateTime = date("Y-m-d H:i:s");
+        Stats::create(["logged_time", $currentDateTime]);
         return response()->json(["message" => "Stats created successfully"], 201);
     }
 
