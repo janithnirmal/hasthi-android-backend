@@ -106,20 +106,18 @@ class PaymentController
             ]
         );
 
-        try {
 
-            $data = [
-                'mail' => $request->custom_1 ?? 121,
-                'totalAmount' => $payhere_amount ?? 122,
-                'paymentMethod' => 'Card Payment',
-                'transactionId' => $order_id ?? 123,
-                'orderDate' => date('Y-m-d'),
-            ];
 
-            Mail::to($data['mail'])->send(new MenuPayment($data));
-        } catch (\Throwable $th) {
-            Log::error($th->getMessage());
-        }
+        $data = [
+            'mail' => $request->custom_1 ?? 121,
+            'totalAmount' => $payhere_amount ?? 122,
+            'paymentMethod' => 'Card Payment',
+            'transactionId' => $order_id ?? 123,
+            'orderDate' => date('Y-m-d'),
+        ];
+
+        Mail::to($data['mail'])->send(new MenuPayment($data));
+
 
         return response()->json(['message' => 'Payment successful']);
     }
