@@ -12,7 +12,6 @@ return new class extends Migration {
     {
         Schema::create('stats', function (Blueprint $table) {
             $table->id();
-            $table->dateTime("logged_time");
             $table->timestamps();
         });
     }

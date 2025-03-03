@@ -9,8 +9,4 @@ class Stats extends Model
 {
     /** @use HasFactory<\Database\Factories\StatsFactory> */
     use HasFactory;
-
-    protected $fillable = [
-        'logged_time',
-    ];
 }
