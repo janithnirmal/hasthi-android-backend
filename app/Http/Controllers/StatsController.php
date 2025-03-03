@@ -12,12 +12,14 @@ class StatsController
      */
     public function index()
     {
-        $lastMonthDataList = Stats::where('created_at', '>=', now()->startOfMonth()->subMonth())->where('created_at', '<=', now()->endOfMonth()->subMonth())->get();
-        $thisMonthDataList = Stats::where('created_at', '>=', now()->startOfMonth())->where('created_at', '<=', now()->endOfMonth())->get();
+        $lastMonthDataList = Stats::whereBetween('created_at', [now()->startOfMonth()->subMonth(), now()->endOfMonth()->subMonth()])->get();
+        $thisMonthDataList = Stats::whereBetween('created_at', [now()->startOfMonth(), now()->endOfMonth()])->get();
+
         return response()->json([
             'last_month' => $lastMonthDataList,
             'this_month' => $thisMonthDataList
         ]);
+
     }
 
     /**
