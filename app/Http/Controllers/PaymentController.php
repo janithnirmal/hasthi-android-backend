@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\MenuPayment;
 use App\Models\Payment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class PaymentController
 {
@@ -94,9 +97,24 @@ class PaymentController
             fwrite($file, json_encode($request->all()));
             fclose($file);
         }
-        
+
         // store data in the db using the Payment model
-        Payment::create(["data" => json_encode($request->all())]);
+        Payment::create(["data" => json_encode($request->all()), "user_id" => $request->custom_2]);
+
+        try {
+
+            $data = [
+                'mail' => $request->custom_1,
+                'totalAmount' => $payhere_amount,
+                'paymentMethod' => 'Card Payment',
+                'transactionId' => $order_id,
+                'orderDate' => date('Y-m-d'),
+            ];
+
+            Mail::to($data['mail'])->send(new MenuPayment($data));
+        } catch (\Throwable $th) {
+            Log::error($th->getMessage());
+        }
 
         return response()->json(['message' => 'Payment successful']);
     }
