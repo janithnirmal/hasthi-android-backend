@@ -99,7 +99,12 @@ class PaymentController
         }
 
         // store data in the db using the Payment model
-        Payment::create(["data" => json_encode($request->all()), "user_id" => $request->custom_2]);
+        Payment::create(
+            [
+                "data" => json_encode(value: $request->all()),
+                "user_id" => $request->custom_2
+            ]
+        );
 
         try {
 
