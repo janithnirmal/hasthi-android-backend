@@ -13,6 +13,10 @@ class OrderController
     public function index(Request $request)
     {
         $userUID = $request->userUID;
+
+        if ($userUID == null) {
+            return response()->json(Order::all());
+        }
         return response()->json(Order::where('userUID', $userUID)->get());
     }
 
