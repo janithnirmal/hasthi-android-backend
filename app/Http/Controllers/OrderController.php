@@ -7,6 +7,14 @@ use Illuminate\Http\Request;
 
 class OrderController
 {
+    public function status(Request $request) {
+        $order = Order::find($request->id);
+        $order->status = $request->status;
+        $order->save();
+        return response()->json($order);
+    }
+
+
     /**
      * Display a listing of the resource.
      */
